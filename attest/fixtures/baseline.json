@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "name": "fixture-golden-v1",
+  "events": [
+    {
+      "pcr": 0,
+      "event_type": "EV_S_CRTM_CONTENTS",
+      "digests": {
+        "sha1": "9a457f959afcb846666a8bc6edd333a3e4ce8fea",
+        "sha256": "fd4c0d83539a596d7d250d9db319a6e13330d63607839bc18d8c441c123336f4"
+      },
+      "description": "Core Root of Trust for Measurement"
+    },
+    {
+      "pcr": 0,
+      "event_type": "EV_EFI_PLATFORM_FIRMWARE_BLOB",
+      "digests": {
+        "sha1": "65282f5bb5838d531d49b08f21ad881ea0cc3541",
+        "sha256": "8eef7eb2161697549b955f4a6b2d0a5b3c4d0bfa94cf3b37145bbf53df2ba364"
+      },
+      "description": "Main firmware volume"
+    },
+    {
+      "pcr": 1,
+      "event_type": "EV_POST_CODE",
+      "digests": {
+        "sha1": "4a4208a5c394d7f90fe192971854ff8606baa4bc",
+        "sha256": "f9b133c7e373d1e5e6865bfb1d19dc9af95f6f9fcecc6b9f68b8a47d889b6815"
+      },
+      "description": "Firmware POST code"
+    },
+    {
+      "pcr": 4,
+      "event_type": "EV_EFI_BOOT_SERVICES_APPLICATION",
+      "digests": {
+        "sha1": "95b59676fc5c22cf8d7507a4483a00ed27150788",
+        "sha256": "0b4c593cba8fce82a4339791b4eada2c2b9de2de4914ce5947176e8afe2bc844"
+      },
+      "description": "Bootloader image"
+    },
+    {
+      "pcr": 7,
+      "event_type": "EV_EFI_VARIABLE_DRIVER_CONFIG",
+      "digests": {
+        "sha1": "81cf48a5b8c46409ab160d33edc6fb16a1affaa0",
+        "sha256": "6b279810c7ea0736d6d18003b9f0638e4648df4a0a0d4b404841f934f70c3deb"
+      },
+      "description": "Secure boot variables"
+    },
+    {
+      "pcr": 7,
+      "event_type": "EV_SEPARATOR",
+      "digests": {
+        "sha1": "9069ca78e7450a285173431b3e52c5c25299e473",
+        "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+      },
+      "description": "Pre-OS separator"
+    },
+    {
+      "pcr": 9,
+      "event_type": "EV_IPL",
+      "digests": {
+        "sha1": "697bf823a483266ad033715fb647fc353c294575",
+        "sha256": "0c9d1e512574a28c4aa3e321b85725c10dafca19dcf80712da1f465f8b961077"
+      },
+      "description": "Initial RAM disk"
+    }
+  ],
+  "pcrs": {
+    "sha1": {
+      "0": "d374d1348a4e93ffa5a992d0176bc1992e623d8b",
+      "1": "0b029d998978f39f3d2ab23658edd0b85f392497",
+      "4": "d4541ffd0c4ab77998bd96b176c8b3099a1cb91d",
+      "7": "5ebd2d98661d7e7e1f85f10f93a02c9bf1896a70",
+      "9": "cc18941dcf85e4b7c02697c2ffdf273ff81d00ad"
+    },
+    "sha256": {
+      "0": "5232777e453b3dce2e02438e0df671b142d39fe4fa9f14fc84800395e1cfbafd",
+      "1": "d5ab58bc22acd8960f3d3c8cab7b48a6f0ae085a4e5aeb3b890cfb0614f5cfbf",
+      "4": "5b0b2535ac77af38a931c72dd1045bbe17c0847354b1c880dbdcb899ee1b767c",
+      "7": "acef7fd38e52456aa249e52f389ab06e3c7952e44735a1284eb27d71c29c075a",
+      "9": "d446394eb37609346b2dd998e9882248f55c40c7b9a7cbdaf27f58dc01669bbe"
+    }
+  }
+}
